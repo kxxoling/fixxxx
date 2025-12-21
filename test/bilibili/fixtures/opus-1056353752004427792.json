@@ -1,0 +1,847 @@
+{
+  "code": 0,
+  "message": "0",
+  "ttl": 1,
+  "data": {
+    "item": {
+      "basic": {
+        "collection_id": 326286,
+        "comment_id_str": "41358718",
+        "comment_type": 12,
+        "like_icon": {
+          "action_url": "",
+          "end_url": "",
+          "id": 0,
+          "start_url": ""
+        },
+        "rid_str": "41358718",
+        "title": "通过 DevTools 绕过 SSR 抓包某站专栏正文接口 - 哔哩哔哩",
+        "uid": 645769214
+      },
+      "id_str": "1056353752004427792",
+      "modules": [
+        {
+          "module_title": {
+            "text": "通过 DevTools 绕过 SSR 抓包某站专栏正文接口"
+          },
+          "module_type": "MODULE_TYPE_TITLE"
+        },
+        {
+          "module_author": {
+            "avatar": {
+              "container_size": { "height": 1.35, "width": 1.35 },
+              "fallback_layers": {
+                "is_critical_group": true,
+                "layers": [
+                  {
+                    "general_spec": {
+                      "pos_spec": {
+                        "axis_x": 0.675,
+                        "axis_y": 0.675,
+                        "coordinate_pos": 2
+                      },
+                      "render_spec": { "opacity": 1 },
+                      "size_spec": { "height": 1, "width": 1 }
+                    },
+                    "layer_config": {
+                      "is_critical": true,
+                      "tags": {
+                        "AVATAR_LAYER": {},
+                        "GENERAL_CFG": {
+                          "config_type": 1,
+                          "general_config": {
+                            "web_css_style": { "borderRadius": "50%" }
+                          }
+                        }
+                      }
+                    },
+                    "resource": {
+                      "res_image": {
+                        "image_src": {
+                          "placeholder": 6,
+                          "remote": {
+                            "bfs_style": "widget-layer-avatar",
+                            "url": "https://i2.hdslb.com/bfs/face/77906db03b1eefac02613de184afad03f7bc58d7.jpg"
+                          },
+                          "src_type": 1
+                        }
+                      },
+                      "res_type": 3
+                    },
+                    "visible": true
+                  }
+                ]
+              },
+              "mid": "645769214"
+            },
+            "decorate_card": {
+              "big_card_url": "https://i0.hdslb.com/bfs/vip/e2ffa1d1d491fe0464338ed3921327ef5e4b42c5.png",
+              "card_type": 2,
+              "card_type_name": "免费",
+              "card_url": "https://i0.hdslb.com/bfs/vip/a9e3d993c7a15e88ce0bf714a142f7d2b44121e2.png",
+              "fan": {},
+              "id": 28,
+              "image_enhance": "https://i0.hdslb.com/bfs/vip/a9e3d993c7a15e88ce0bf714a142f7d2b44121e2.png",
+              "item_id": 28,
+              "jump_url": "https://www.bilibili.com/h5/mall/equity-link/collect-home?item_id=28&isdiy=0&part=card&from=post&f_source=garb&vmid=645769214&native.theme=1&navhide=1",
+              "name": "2233娘"
+            },
+            "face": "https://i2.hdslb.com/bfs/face/77906db03b1eefac02613de184afad03f7bc58d7.jpg",
+            "face_nft": false,
+            "following": null,
+            "jump_url": "//space.bilibili.com/645769214",
+            "label": "",
+            "mid": 645769214,
+            "more": {
+              "three_point_items": [
+                { "label": "举报", "type": "THREE_POINT_REPORT" }
+              ]
+            },
+            "name": "Session小胡",
+            "official": { "desc": "", "role": 0, "title": "", "type": -1 },
+            "pendant": {
+              "expire": 0,
+              "image": "",
+              "image_enhance": "",
+              "image_enhance_frame": "",
+              "n_pid": 0,
+              "name": "",
+              "pid": 0
+            },
+            "pub_location_text": "",
+            "pub_time": "2025年04月16日 15:52",
+            "pub_ts": 1744789924,
+            "views_text": "",
+            "vip": {
+              "avatar_icon": { "icon_resource": {} },
+              "avatar_subscript": 0,
+              "avatar_subscript_url": "",
+              "due_date": 1665158400000,
+              "label": {
+                "bg_color": "",
+                "bg_style": 0,
+                "border_color": "",
+                "img_label_uri_hans": "",
+                "img_label_uri_hans_static": "https://i0.hdslb.com/bfs/vip/d7b702ef65a976b20ed854cbd04cb9e27341bb79.png",
+                "img_label_uri_hant": "",
+                "img_label_uri_hant_static": "https://i0.hdslb.com/bfs/activity-plat/static/20220614/e369244d0b14644f5e1a06431e22a4d5/KJunwh19T5.png",
+                "label_theme": "",
+                "path": "",
+                "text": "",
+                "text_color": "",
+                "use_img_label": true
+              },
+              "nickname_color": "",
+              "role": 0,
+              "status": 0,
+              "theme_type": 0,
+              "tv_due_date": 0,
+              "tv_vip_pay_type": 0,
+              "tv_vip_status": 0,
+              "type": 1,
+              "vip_pay_type": 0
+            }
+          },
+          "module_type": "MODULE_TYPE_AUTHOR"
+        },
+        {
+          "module_collection": {
+            "count": "4篇",
+            "id": 326286,
+            "name": "电脑",
+            "title": "收录于文集"
+          },
+          "module_type": "MODULE_TYPE_COLLECTION"
+        },
+        {
+          "module_content": {
+            "paragraphs": [
+              {
+                "align": 0,
+                "format": { "align": 0, "indent": null },
+                "heading": {
+                  "level": 2,
+                  "nodes": [
+                    {
+                      "type": "TEXT_NODE_TYPE_WORD",
+                      "word": {
+                        "bg_style": { "color": {} },
+                        "color": null,
+                        "font_level": "xLarge",
+                        "font_size": 22,
+                        "style": { "bold": true },
+                        "words": "背景"
+                      }
+                    }
+                  ]
+                },
+                "para_type": 8
+              },
+              {
+                "format": { "align": 0, "indent": null },
+                "list": {
+                  "children": null,
+                  "items": [
+                    {
+                      "level": 1,
+                      "nodes": [
+                        {
+                          "type": "TEXT_NODE_TYPE_WORD",
+                          "word": {
+                            "color": null,
+                            "font_level": "regular",
+                            "font_size": 17,
+                            "style": {},
+                            "words": "最近没什么事做, 又回 BAC 看看有什么接口可以抓, 于是看到了陈年的专栏正文内容的 Issue #859"
+                          }
+                        }
+                      ],
+                      "order": 1,
+                      "order_style": {}
+                    },
+                    {
+                      "level": 1,
+                      "nodes": [
+                        {
+                          "type": "TEXT_NODE_TYPE_WORD",
+                          "word": {
+                            "color": null,
+                            "font_level": "regular",
+                            "font_size": 17,
+                            "style": {},
+                            "words": "由于泽生自己是写前端的, 对于浏览器 DevTools 的各项调试工具还算是比较了解, 打算想办法把专栏正文的接口抓下来 :)"
+                          }
+                        }
+                      ],
+                      "order": 2,
+                      "order_style": {}
+                    }
+                  ],
+                  "style": 2
+                },
+                "para_type": 5
+              },
+              {
+                "align": 0,
+                "format": { "align": 0, "indent": null },
+                "heading": {
+                  "level": 2,
+                  "nodes": [
+                    {
+                      "type": "TEXT_NODE_TYPE_WORD",
+                      "word": {
+                        "bg_style": { "color": {} },
+                        "color": null,
+                        "font_level": "xLarge",
+                        "font_size": 22,
+                        "style": { "bold": true },
+                        "words": "思路"
+                      }
+                    }
+                  ]
+                },
+                "para_type": 8
+              },
+              {
+                "format": { "align": 0, "indent": null },
+                "list": {
+                  "children": null,
+                  "items": [
+                    {
+                      "level": 1,
+                      "nodes": [
+                        {
+                          "type": "TEXT_NODE_TYPE_WORD",
+                          "word": {
+                            "color": null,
+                            "font_level": "regular",
+                            "font_size": 17,
+                            "style": {},
+                            "words": "由于专栏正文完整的内容在页面加载的时候就已经通过 SSR (Server-Side Rendering, 服务端渲染) 的方式通过 <script> 标签注入到 HTML 网页中, 直接通过看 DevTools 的网络面板肯定是没用的"
+                          }
+                        }
+                      ],
+                      "order": 1,
+                      "order_style": {}
+                    }
+                  ],
+                  "style": 2
+                },
+                "para_type": 5
+              },
+              {
+                "align": 0,
+                "format": { "align": 0, "indent": null },
+                "para_type": 2,
+                "pic": {
+                  "pics": [
+                    {
+                      "aigc": null,
+                      "height": 494,
+                      "live_url": null,
+                      "size": 180.8974609375,
+                      "url": "https://i0.hdslb.com/bfs/new_dyn/7bb121008990850bbd333fe504eebc90645769214.png",
+                      "width": 748
+                    }
+                  ],
+                  "style": 2
+                }
+              },
+              {
+                "format": { "align": 0, "indent": null },
+                "list": {
+                  "children": null,
+                  "items": [
+                    {
+                      "level": 1,
+                      "nodes": [
+                        {
+                          "type": "TEXT_NODE_TYPE_WORD",
+                          "word": {
+                            "color": null,
+                            "font_level": "regular",
+                            "font_size": 17,
+                            "style": {},
+                            "words": "最直接的方法是找到专栏相关的 JavaScript 代码, 通过大脑在没有 SourceMap 的情况下沿着 bundle 逆向出接口, 这种方法对于泽生明显不可行, 其中一个原因是屏幕太小而源码太大 (-.-;)"
+                          }
+                        }
+                      ],
+                      "order": 1,
+                      "order_style": {}
+                    },
+                    {
+                      "level": 1,
+                      "nodes": [
+                        {
+                          "type": "TEXT_NODE_TYPE_WORD",
+                          "word": {
+                            "color": null,
+                            "font_level": "regular",
+                            "font_size": 17,
+                            "style": {},
+                            "words": "另一个方法是通过伪造 SSR 不工作, 从而诱导页面脚本手动通过 API 去获取内容, 不过伪造的方法也比较麻烦, 但可行度相对较高 😆"
+                          }
+                        }
+                      ],
+                      "order": 2,
+                      "order_style": {}
+                    },
+                    {
+                      "level": 1,
+                      "nodes": [
+                        {
+                          "type": "TEXT_NODE_TYPE_WORD",
+                          "word": {
+                            "color": null,
+                            "font_level": "regular",
+                            "font_size": 17,
+                            "style": {},
+                            "words": "关于如何伪造 SSR 不工作的现象, 就需要分析 SSR 是如何被使用的, 某站的 SSR 是通过向页面注入 JavaScript 代码实现的, 具体是在 window 全局对象上加了个属性 __INITIAL_STATE__, 具体结构需要具体页面分析"
+                          }
+                        }
+                      ],
+                      "order": 3,
+                      "order_style": {}
+                    },
+                    {
+                      "level": 1,
+                      "nodes": [
+                        {
+                          "type": "TEXT_NODE_TYPE_WORD",
+                          "word": {
+                            "color": null,
+                            "font_level": "regular",
+                            "font_size": 17,
+                            "style": {},
+                            "words": "目标就是要在读取之前移除这个属性, 移除方法简单, 无非是直接 window.__INITIAL_STATE__ = undefined (或者任意无效值), 或者 delete window.__INITIAL_STATE__, 别的 ES6 的反射之类的方法就不说了, 这不是重点"
+                          }
+                        }
+                      ],
+                      "order": 4,
+                      "order_style": {}
+                    },
+                    {
+                      "level": 1,
+                      "nodes": [
+                        {
+                          "type": "TEXT_NODE_TYPE_WORD",
+                          "word": {
+                            "color": null,
+                            "font_level": "regular",
+                            "font_size": 17,
+                            "style": {},
+                            "words": "但这个脚本注入的位置就很恶心, 不在 <head> 里面, 也不在 <body> 底部, 就刚好在读取 __INITIAL_STATE__ 的脚本前面, 这使得无法使用篡改猴一类的用户脚本插件进行修改, 因为提供的用户脚本执行方式会出现还没写属性和已经读过属性的问题 (゜-゜)"
+                          }
+                        }
+                      ],
+                      "order": 5,
+                      "order_style": {}
+                    },
+                    {
+                      "level": 1,
+                      "nodes": [
+                        {
+                          "type": "TEXT_NODE_TYPE_WORD",
+                          "word": {
+                            "color": null,
+                            "font_level": "regular",
+                            "font_size": 17,
+                            "style": {},
+                            "words": "接着就是传统的 DevTools 调试面板, 但正常手动暂停脚本执行往往已经脚本执行完成了, 解决方法就是网络节流或者 <head> 处用户脚本 debugger 语句"
+                          }
+                        }
+                      ],
+                      "order": 6,
+                      "order_style": {}
+                    },
+                    {
+                      "level": 1,
+                      "nodes": [
+                        {
+                          "type": "TEXT_NODE_TYPE_WORD",
+                          "word": {
+                            "color": null,
+                            "font_level": "regular",
+                            "font_size": 17,
+                            "style": {},
+                            "words": "正好篡改猴高级设置允许用户脚本执行前暂停开始调试, 原理就是 debugger 语句, 只要把脚本执行位置放在 <body> 之前就有机会打断点把 __INITIAL_STATE__ 删掉 💥"
+                          }
+                        }
+                      ],
+                      "order": 7,
+                      "order_style": {}
+                    }
+                  ],
+                  "style": 2
+                },
+                "para_type": 5
+              },
+              {
+                "align": 0,
+                "format": { "align": 0, "indent": null },
+                "para_type": 2,
+                "pic": {
+                  "pics": [
+                    {
+                      "aigc": null,
+                      "height": 563,
+                      "live_url": null,
+                      "size": 312.779296875,
+                      "url": "https://i0.hdslb.com/bfs/new_dyn/1a20d186e8c8cddc043b5295d481c719645769214.png",
+                      "width": 625
+                    }
+                  ],
+                  "style": 2
+                }
+              },
+              {
+                "align": 0,
+                "format": { "align": 0, "indent": null },
+                "heading": {
+                  "level": 2,
+                  "nodes": [
+                    {
+                      "type": "TEXT_NODE_TYPE_WORD",
+                      "word": {
+                        "bg_style": { "color": {} },
+                        "color": null,
+                        "font_level": "xLarge",
+                        "font_size": 22,
+                        "style": { "bold": true },
+                        "words": "实践"
+                      }
+                    }
+                  ]
+                },
+                "para_type": 8
+              },
+              {
+                "format": { "align": 0, "indent": null },
+                "list": {
+                  "children": null,
+                  "items": [
+                    {
+                      "level": 1,
+                      "nodes": [
+                        {
+                          "type": "TEXT_NODE_TYPE_WORD",
+                          "word": {
+                            "color": null,
+                            "font_level": "regular",
+                            "font_size": 17,
+                            "style": {},
+                            "words": "使用 Chromium (理论上 Firefox 也可以, 但其 DevTools 泽生用起来不是很舒服) 安装篡改猴扩展 🐒, 新建一个用户脚本, 里面是否写内容无所谓, 执行位置为 document-head, 然后在篡改猴的设置里面把调试脚本打开"
+                          }
+                        }
+                      ],
+                      "order": 1,
+                      "order_style": {}
+                    },
+                    {
+                      "level": 1,
+                      "nodes": [
+                        {
+                          "type": "TEXT_NODE_TYPE_WORD",
+                          "word": {
+                            "color": null,
+                            "font_level": "regular",
+                            "font_size": 17,
+                            "style": {},
+                            "words": "接着打开一个使用 SSR 的网页, 不过注意要保持 DevTools 打开, 否则调试就不会生效, 页面脚本自动暂停后, 你将看到你的脚本和该页面已经加载的内容, 包含 HTML 网页, JavaScript 代码, 和 CSS 文本"
+                          }
+                        }
+                      ],
+                      "order": 2,
+                      "order_style": {}
+                    },
+                    {
+                      "level": 1,
+                      "nodes": [
+                        {
+                          "type": "TEXT_NODE_TYPE_WORD",
+                          "word": {
+                            "color": null,
+                            "font_level": "regular",
+                            "font_size": 17,
+                            "style": {},
+                            "words": "你所需要做的就是检查 SSR 的情况是否如你所想的那样, 放在 window.__INITIAL_STATE__ 那里, 如果是直接渲染成页面元素的话, 抱歉上帝来了也救不了你, 某站 JavaScript 前端可不会管 HTML 的事情 🫠"
+                          }
+                        }
+                      ],
+                      "order": 3,
+                      "order_style": {}
+                    },
+                    {
+                      "level": 1,
+                      "nodes": [
+                        {
+                          "type": "TEXT_NODE_TYPE_WORD",
+                          "word": {
+                            "color": null,
+                            "font_level": "regular",
+                            "font_size": 17,
+                            "style": {},
+                            "words": "如果在 __INITIAL_STATE__ 里面, 恭喜, 你可以直接继续了. 如果不是, 那就检查一下当前页面路径之类的, 看看有没有不同版本的相同内容, 毕竟专栏分新旧版, 专栏网页也分新旧版, 往往旧版能带来惊喜 ✨"
+                          }
+                        }
+                      ],
+                      "order": 4,
+                      "order_style": {}
+                    },
+                    {
+                      "level": 1,
+                      "nodes": [
+                        {
+                          "type": "TEXT_NODE_TYPE_WORD",
+                          "word": {
+                            "color": null,
+                            "font_level": "regular",
+                            "font_size": 17,
+                            "style": {},
+                            "words": "找到了合适的 __INITIAL_STATE__, 你只需要在原地打个断点, 然后继续执行脚本, 页面就会在那里暂停, 接着执行下一步, 此时赋值完成, 可以开始改属性了"
+                          }
+                        }
+                      ],
+                      "order": 5,
+                      "order_style": {}
+                    },
+                    {
+                      "level": 1,
+                      "nodes": [
+                        {
+                          "type": "TEXT_NODE_TYPE_WORD",
+                          "word": {
+                            "color": null,
+                            "font_level": "regular",
+                            "font_size": 17,
+                            "style": {},
+                            "words": "切到控制台, 执行那句期待已久的语句: window.__INITIAL_STATE__ = undefined, 大功告成! 🎉"
+                          }
+                        }
+                      ],
+                      "order": 6,
+                      "order_style": {}
+                    },
+                    {
+                      "level": 1,
+                      "nodes": [
+                        {
+                          "type": "TEXT_NODE_TYPE_WORD",
+                          "word": {
+                            "color": null,
+                            "font_level": "regular",
+                            "font_size": 17,
+                            "style": {},
+                            "words": "恢复页面脚本执行, 你会看到页面好像卡了一下, 然后文章还是加载了出来, 这个时候就可以看看网络面板的情况了"
+                          }
+                        }
+                      ],
+                      "order": 7,
+                      "order_style": {}
+                    }
+                  ],
+                  "style": 2
+                },
+                "para_type": 5
+              },
+              {
+                "align": 0,
+                "format": { "align": 0, "indent": null },
+                "para_type": 2,
+                "pic": {
+                  "pics": [
+                    {
+                      "aigc": null,
+                      "height": 831,
+                      "live_url": null,
+                      "size": 462.603515625,
+                      "url": "https://i0.hdslb.com/bfs/new_dyn/87c88df1e15195996e34835456493d55645769214.png",
+                      "width": 892
+                    }
+                  ],
+                  "style": 2
+                }
+              },
+              {
+                "format": { "align": 0, "indent": null },
+                "list": {
+                  "children": null,
+                  "items": [
+                    {
+                      "level": 1,
+                      "nodes": [
+                        {
+                          "type": "TEXT_NODE_TYPE_WORD",
+                          "word": {
+                            "color": null,
+                            "font_level": "regular",
+                            "font_size": 17,
+                            "style": {},
+                            "words": "可以观察到, 多了一个你从来没见到过的叫 view 的野生请求, 点开详细, 复制地址, 记下参数, 保存响应, 发 Issue 去也~"
+                          }
+                        }
+                      ],
+                      "order": 1,
+                      "order_style": {}
+                    },
+                    {
+                      "level": 1,
+                      "nodes": [
+                        {
+                          "type": "TEXT_NODE_TYPE_WORD",
+                          "word": {
+                            "color": null,
+                            "font_level": "regular",
+                            "font_size": 17,
+                            "style": {},
+                            "words": "如果这时回过头看控制台, 你会发现有这么一段错误十分显眼, 无法读取 undefined 的属性, 正是由于这个错误, 加之某站程序员的细心, 你才得以看到文章和抓到接口"
+                          }
+                        }
+                      ],
+                      "order": 2,
+                      "order_style": {}
+                    }
+                  ],
+                  "style": 2
+                },
+                "para_type": 5
+              },
+              {
+                "align": 0,
+                "format": { "align": 0, "indent": null },
+                "heading": {
+                  "level": 2,
+                  "nodes": [
+                    {
+                      "type": "TEXT_NODE_TYPE_WORD",
+                      "word": {
+                        "bg_style": { "color": {} },
+                        "color": null,
+                        "font_level": "xLarge",
+                        "font_size": 22,
+                        "style": { "bold": true },
+                        "words": "后话"
+                      }
+                    }
+                  ]
+                },
+                "para_type": 8
+              },
+              {
+                "format": { "align": 0, "indent": null },
+                "list": {
+                  "children": null,
+                  "items": [
+                    {
+                      "level": 1,
+                      "nodes": [
+                        {
+                          "type": "TEXT_NODE_TYPE_WORD",
+                          "word": {
+                            "color": null,
+                            "font_level": "regular",
+                            "font_size": 17,
+                            "style": {},
+                            "words": "Issue 已经发了, 估计写到文档里也是泽生的事情 🥴"
+                          }
+                        }
+                      ],
+                      "order": 1,
+                      "order_style": {}
+                    },
+                    {
+                      "level": 1,
+                      "nodes": [
+                        {
+                          "type": "TEXT_NODE_TYPE_WORD",
+                          "word": {
+                            "color": null,
+                            "font_level": "regular",
+                            "font_size": 17,
+                            "style": {},
+                            "words": "这样的因 SSR 而省下的相关接口应该也有很多, 一个个慢慢打断点抓也不是个长久之计, 毕竟一旦直接渲染成 HTML, 就没的办法了 😮‍💨"
+                          }
+                        }
+                      ],
+                      "order": 2,
+                      "order_style": {}
+                    },
+                    {
+                      "level": 1,
+                      "nodes": [
+                        {
+                          "type": "TEXT_NODE_TYPE_WORD",
+                          "word": {
+                            "color": null,
+                            "font_level": "regular",
+                            "font_size": 17,
+                            "style": {},
+                            "words": "学习正经的前端知识还是有利于不正经的逆向的 📚"
+                          }
+                        }
+                      ],
+                      "order": 3,
+                      "order_style": {}
+                    },
+                    {
+                      "level": 1,
+                      "nodes": [
+                        {
+                          "type": "TEXT_NODE_TYPE_WORD",
+                          "word": {
+                            "color": null,
+                            "font_level": "regular",
+                            "font_size": 17,
+                            "style": {},
+                            "words": "希望大家都能来一起帮忙, Make BAC Great Again! 🥂"
+                          }
+                        }
+                      ],
+                      "order": 4,
+                      "order_style": {}
+                    }
+                  ],
+                  "style": 2
+                },
+                "para_type": 5
+              },
+              {
+                "align": 0,
+                "format": { "align": 0, "indent": null },
+                "para_type": 4,
+                "text": {
+                  "nodes": [
+                    {
+                      "type": "TEXT_NODE_TYPE_WORD",
+                      "word": {
+                        "color": "rgba(var(--Ga9_rgb), 0.6)",
+                        "font_level": "regular",
+                        "font_size": 17,
+                        "style": {},
+                        "words": "有改动, 原文地址: https://sess.xhustudio.eu.org/posts/2025/devtools-vs-ssr-bac/"
+                      }
+                    }
+                  ]
+                }
+              }
+            ]
+          },
+          "module_type": "MODULE_TYPE_CONTENT"
+        },
+        {
+          "module_extend": {
+            "items": [
+              {
+                "icon": null,
+                "jump_url": "//search.bilibili.com/all?keyword=HTML",
+                "text": "HTML"
+              },
+              {
+                "icon": null,
+                "jump_url": "//search.bilibili.com/all?keyword=API",
+                "text": "API"
+              },
+              {
+                "icon": null,
+                "jump_url": "//search.bilibili.com/all?keyword=BAC",
+                "text": "BAC"
+              },
+              {
+                "icon": null,
+                "jump_url": "//search.bilibili.com/all?keyword=JavaScript",
+                "text": "JavaScript"
+              },
+              {
+                "icon": null,
+                "jump_url": "//search.bilibili.com/all?keyword=Bilibili",
+                "text": "Bilibili"
+              },
+              {
+                "icon": null,
+                "jump_url": "//search.bilibili.com/all?keyword=GitHub",
+                "text": "GitHub"
+              },
+              {
+                "icon": null,
+                "jump_url": "//search.bilibili.com/all?keyword=Web",
+                "text": "Web"
+              },
+              {
+                "icon": null,
+                "jump_url": "//search.bilibili.com/all?keyword=Chromium",
+                "text": "Chromium"
+              },
+              {
+                "icon": null,
+                "jump_url": "//search.bilibili.com/all?keyword=DevTools",
+                "text": "DevTools"
+              }
+            ]
+          },
+          "module_type": "MODULE_TYPE_EXTEND"
+        },
+        {
+          "module_bottom": {
+            "share_info": {
+              "pic": "https://static.hdslb.com/mobile/img/app_logo.png",
+              "summary": "背景",
+              "title": "通过 DevTools 绕过 SSR 抓包某站专栏正文接口"
+            }
+          },
+          "module_type": "MODULE_TYPE_BOTTOM"
+        },
+        {
+          "module_stat": {
+            "coin": { "count": 3, "forbidden": false, "status": false },
+            "comment": { "count": 1, "forbidden": false },
+            "favorite": { "count": 4, "forbidden": false, "status": false },
+            "forward": { "count": 1, "forbidden": false },
+            "like": { "count": 7, "forbidden": false, "status": false }
+          },
+          "module_type": "MODULE_TYPE_STAT"
+        }
+      ],
+      "type": 1
+    }
+  }
+}

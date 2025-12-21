@@ -1,0 +1,94 @@
+{
+  "code": 0,
+  "message": "0",
+  "ttl": 1,
+  "data": {
+    "card": {
+      "desc": {
+        "uid": 401742377,
+        "type": 2,
+        "rid": 375847100,
+        "acl": 1024,
+        "view": 1394389,
+        "repost": 49,
+        "comment": 995,
+        "like": 11480,
+        "is_liked": 0,
+        "dynamic_id": 1141736312467882000,
+        "timestamp": 1764669600,
+        "pre_dy_id": 0,
+        "orig_dy_id": 0,
+        "orig_type": 0,
+        "user_profile": {
+          "info": {
+            "uid": 401742377,
+            "uname": "原神",
+            "face": "https://i2.hdslb.com/bfs/face/853c4a846793dfbdafd8f16a40d6d8065bdb7c6f.jpg"
+          },
+          "card": { "official_verify": { "type": -1 } },
+          "vip": {
+            "vipType": 2,
+            "vipDueDate": 1791475200000,
+            "dueRemark": "",
+            "accessStatus": 0,
+            "vipStatus": 1,
+            "vipStatusWarn": "",
+            "themeType": 0,
+            "label": {
+              "path": "http://i0.hdslb.com/bfs/vip/label_annual.png",
+              "text": "年度大会员",
+              "label_theme": "annual_vip",
+              "text_color": "#FFFFFF",
+              "bg_style": 1,
+              "bg_color": "#FB7299",
+              "border_color": ""
+            },
+            "avatar_subscript": 1,
+            "nickname_color": "#FB7299",
+            "role": 3,
+            "avatar_subscript_url": ""
+          },
+          "pendant": {
+            "pid": 3144,
+            "name": "原神",
+            "image": "https://i2.hdslb.com/bfs/garb/item/6d5969a4f02fa1d4e5776072dc9f0b006478e82b.png",
+            "expire": 0,
+            "image_enhance": "https://i2.hdslb.com/bfs/garb/item/ff5bde4a6337140b632beffd0cbbaaf927c03ac0.webp",
+            "image_enhance_frame": "https://i2.hdslb.com/bfs/garb/item/a1893352f03d1d6b321d504ba2ae0ecc0ea85647.png"
+          },
+          "rank": "10000",
+          "sign": "原神官方账号",
+          "level_info": {
+            "current_level": 6,
+            "current_min": 0,
+            "current_exp": 0,
+            "next_exp": ""
+          }
+        },
+        "spec_type": 0,
+        "uid_type": 1,
+        "stype": 0,
+        "r_type": 0,
+        "inner_id": 0,
+        "status": 1,
+        "dynamic_id_str": "1141736312467882000",
+        "pre_dy_id_str": "0",
+        "orig_dy_id_str": "0",
+        "rid_str": "375847100",
+        "origin": null,
+        "bvid": "",
+        "previous": null
+      },
+      "card": "{\"item\":{\"id\":375847100,\"description\":\"#原神# #原神月之三# #原神UP主激励计划# #终北的夜行诗# \\n\\n旅行者们大家好~哔哩哔哩《原神》「月之三」版本创作者激励计划更多话题赛道即将开启。\\n\\n〓活动时间〓\\n2025年12月3日-2026年1月13日\\n\\n〓参与方式\\u0026活动说明〓\\n12月3日起，选择「月之三」版本热门活动话题参与内容赛道投稿，现金和原石奖励等你来赢取！\\n请于完成任务前确保账号已绑定游戏角色且冒险等阶≥10级，如已完成任务请先领取奖励再绑定账号，若因未及时绑定账号而导致未领取奖励则无法进行补发！（账号绑定每180天可换绑一次）\\n\\n规则详情见：网页链接 \\n\\n更多创作激励计划相关信息，请持续关注社区平台。\\n未来我们将更加关注社区创作者的成长，提供更丰富的创作激励，为热爱与分享保驾护航。\",\"pictures\":[{\"img_height\":5892,\"img_width\":1125,\"img_src\":\"http://i0.hdslb.com/bfs/new_dyn/7c9613814335f71b9187cbaa579d5370401742377.jpg\",\"img_size\":685.984375}],\"pictures_count\":1,\"reply\":995,\"upload_time\":1764669600},\"user\":{\"uid\":401742377,\"name\":\"原神\",\"head_url\":\"https://i2.hdslb.com/bfs/face/853c4a846793dfbdafd8f16a40d6d8065bdb7c6f.jpg\",\"vip\":{\"type\":2,\"due_date\":1791475200000,\"status\":1,\"theme_type\":0,\"label\":{\"path\":\"http://i0.hdslb.com/bfs/vip/label_annual.png\",\"text\":\"年度大会员\",\"label_theme\":\"annual_vip\",\"text_color\":\"\",\"bg_style\":0,\"bg_color\":\"\",\"border_color\":\"\"},\"avatar_subscript\":1,\"nickname_color\":\"#FB7299\",\"vip_pay_type\":0}}}",
+      "extend_json": "{\"from\":{\"from\":\"create.dynamic.web\",\"emoji_type\":1},\"ctrl\":null,\"lott\":null}",
+      "display": {
+        "origin": null,
+        "usr_action_txt": "",
+        "relation": null,
+        "live_info": null,
+        "emoji_info": { "emoji_details": null },
+        "highlight": null
+      }
+    }
+  }
+}

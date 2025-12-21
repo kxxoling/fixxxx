@@ -1,0 +1,19 @@
+{
+  "name": "fixxxx",
+  "module": "src/index.ts",
+  "type": "module",
+  "scripts": {
+    "dev": "bun run --hot src/index.ts",
+    "format": "biome format --write .",
+    "check": "biome check --write .",
+    "prepare": "husky"
+  },
+  "dependencies": {
+    "hono": "^3.11.0"
+  },
+  "devDependencies": {
+    "@biomejs/biome": "^2.3.10",
+    "bun-types": "latest",
+    "husky": "^9.1.7"
+  }
+}

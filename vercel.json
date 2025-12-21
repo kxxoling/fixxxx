@@ -1,0 +1,9 @@
+{
+  "bunVersion": "1.3",
+  "rewrites": [
+    {
+      "source": "/(.*)",
+      "destination": "/api/index"
+    }
+  ]
+}
