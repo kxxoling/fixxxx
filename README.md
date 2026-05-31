@@ -67,9 +67,3 @@ bun test
 ### Vercel
 
 已配置 [vercel.json](./vercel.json)，Edge Function 入口在 `api/index.ts`。
-
-## 错误处理
-
-- Bilibili API 返回错误时，页面会展示错误码和错误信息（HTTP 502）
-- 资源不存在时返回 404 页面
-- 未知错误返回 500 页面
