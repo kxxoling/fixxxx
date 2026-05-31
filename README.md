@@ -1,14 +1,18 @@
 # fixxxx
 
-Bilibili Instant View 代理服务。为 Telegram 等支持 Instant View 的客户端提供 Bilibili 内容的可读页面，支持视频、动态和专栏文章。
+Instant View 代理服务。为 Telegram 等支持 Instant View 的客户端提供网页的可读页面。
 
-## 支持的内容类型
+目前支持 Bilibili 部分页面，后续会接入更多站点。
 
-| 路由           | 说明                                    | 示例                        |
-| -------------- | --------------------------------------- | --------------------------- |
-| `/video/:bvid` | Bilibili 视频（含分P信息和热门评论）    | `/video/BV1GJ411x7h7`       |
-| `/t/:id`       | Bilibili 动态（图文、纯文字、视频动态） | `/t/1141736312467882000`    |
-| `/opus/:id`    | Bilibili 专栏文章（图文混排）           | `/opus/1056353752004427792` |
+## 支持的站点与路由
+
+### Bilibili
+
+| 路由           | 说明                           | 示例                        |
+| -------------- | ------------------------------ | --------------------------- |
+| `/video/:bvid` | 视频（含分P信息和热门评论）    | `/video/BV1GJ411x7h7`       |
+| `/t/:id`       | 动态（图文、纯文字、视频动态） | `/t/1141736312467882000`    |
+| `/opus/:id`    | 专栏文章（图文混排）           | `/opus/1056353752004427792` |
 
 ## 技术栈
 
@@ -60,7 +64,9 @@ bun test
 
 ## 部署
 
-项目支持三种部署方式：
+### Vercel
+
+已配置 [vercel.json](./vercel.json)，Edge Function 入口在 `api/index.ts`。
 
 ### Cloudflare Workers
 
@@ -70,17 +76,6 @@ bun test
 
 - `CLOUDFLARE_API_TOKEN`
 - `CLOUDFLARE_ACCOUNT_ID`
-
-### Vercel
-
-已配置 [vercel.json](./vercel.json)，Edge Function 入口在 `api/index.ts`。
-
-### Docker
-
-```bash
-docker build -t fixxxx .
-docker run -p 3000:3000 fixxxx
-```
 
 ## 错误处理
 
