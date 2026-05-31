@@ -68,15 +68,6 @@ bun test
 
 已配置 [vercel.json](./vercel.json)，Edge Function 入口在 `api/index.ts`。
 
-### Cloudflare Workers
-
-已配置 [wrangler.toml](./wrangler.toml) 和 GitHub Actions 自动部署（推送到 `master` 分支触发）。
-
-需要在 GitHub 仓库设置中配置 Secrets：
-
-- `CLOUDFLARE_API_TOKEN`
-- `CLOUDFLARE_ACCOUNT_ID`
-
 ## 错误处理
 
 - Bilibili API 返回错误时，页面会展示错误码和错误信息（HTTP 502）
