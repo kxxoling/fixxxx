@@ -13,7 +13,7 @@ describe("Video Logic", () => {
 
     // Mock global fetch
     const originalFetch = global.fetch;
-    global.fetch = mock((url: string) => {
+    const fetchMock = mock((url: string) => {
       if (url.includes("spi")) {
         return Promise.resolve(
           new Response(
@@ -51,6 +51,7 @@ describe("Video Logic", () => {
       // Fallback for any other requests if necessary, or throw an error
       return Promise.reject(new Error(`Unhandled fetch URL: ${url}`));
     });
+    global.fetch = fetchMock as unknown as typeof global.fetch;
 
     try {
       const info = await getVideoInfo("BV1GJ411x7h7");

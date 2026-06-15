@@ -9,17 +9,15 @@
     "noEmit": true,
     "composite": true,
     "strict": true,
-    "downlevelIteration": true,
     "skipLibCheck": true,
     "jsx": "react-jsx",
     "allowSyntheticDefaultImports": true,
     "forceConsistentCasingInFileNames": true,
     "esModuleInterop": true,
     "allowJs": true,
-    "types": [
-      "bun-types" // add Bun global
-    ],
-    "baseUrl": ".", // Enable absolute imports from root
+    "ignoreDeprecations": "6.0",
+    "types": ["bun-types"],
+    "baseUrl": ".",
     "paths": {
       "@/*": ["src/*"]
     }

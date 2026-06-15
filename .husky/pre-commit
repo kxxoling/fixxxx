@@ -1,2 +1,3 @@
+bun run typecheck
 bun run format
 git add .

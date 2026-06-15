@@ -13,9 +13,10 @@ describe("Timeline Logic", () => {
 
     // Mock global fetch
     const originalFetch = global.fetch;
-    global.fetch = mock(() =>
+    const fetchMock = mock(() =>
       Promise.resolve(new Response(JSON.stringify(fixtureData))),
     );
+    global.fetch = fetchMock as unknown as typeof global.fetch;
 
     try {
       const info = await getTimelineInfo("1141736312467882000");
