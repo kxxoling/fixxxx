@@ -18,7 +18,7 @@ export { app };
 
 app.get("/", (c) => {
   return c.text(
-    "Instant View Service.\nBilibili: /video/:bvid, /t/:id, /opus/:id\nWeibo: /w/status/:id, /w/u/:uid",
+    "Instant View Service.\nBilibili: /b/video/:bvid, /b/t/:id, /b/opus/:id\nWeibo: /w/status/:id, /w/u/:uid",
   );
 });
 
@@ -56,7 +56,7 @@ app.get("/proxy/image", async (c) => {
   }
 });
 
-app.get("/video/:bvid", async (c) => {
+app.get("/b/video/:bvid", async (c) => {
   const bvid = c.req.param("bvid");
   const video = await getVideoInfo(bvid);
 
@@ -70,7 +70,7 @@ app.get("/video/:bvid", async (c) => {
   return c.html(html);
 });
 
-app.get("/t/:id", async (c) => {
+app.get("/b/t/:id", async (c) => {
   const id = c.req.param("id");
   const timeline = await getTimelineInfo(id);
 
@@ -82,7 +82,7 @@ app.get("/t/:id", async (c) => {
   return c.html(html);
 });
 
-app.get("/opus/:id", async (c) => {
+app.get("/b/opus/:id", async (c) => {
   const id = c.req.param("id");
   // ID is a string (large number)
   const opus = await getOpusInfo(id);
