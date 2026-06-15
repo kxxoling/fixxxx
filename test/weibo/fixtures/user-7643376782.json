@@ -1,0 +1,35 @@
+{
+  "ok": 1,
+  "data": {
+    "userInfo": {
+      "id": 7643376782,
+      "screen_name": "崩坏星穹铁道",
+      "profile_image_url": "https://tvax1.sinaimg.cn/crop.0.0.1080.1080.180/008lgPsGly8idpmc8mlsyj30u00u0q5z.jpg",
+      "profile_url": "https://m.weibo.cn/u/7643376782",
+      "description": "",
+      "follow_count": 37,
+      "followers_count": "453.3万",
+      "cover_image_phone": "https://wx2.sinaimg.cn/crop.0.0.640.640.640/008lgPsGgy1idpm7jvzo8j31o01o07wh.jpg",
+      "avatar_hd": "https://wx1.sinaimg.cn/orj480/008lgPsGly8idpmc8mlsyj30u00u0q5z.jpg",
+      "statuses_count": 3473,
+      "verified": true,
+      "verified_type": 7,
+      "gender": "f",
+      "mbtype": 12,
+      "svip": 1,
+      "urank": 0,
+      "mbrank": 2,
+      "verified_type_ext": 50,
+      "verified_reason": "《崩坏：星穹铁道》官方账号"
+    },
+    "tabsInfo": {
+      "tabs": [
+        {
+          "tabKey": "weibo",
+          "tab_type": "weibo",
+          "containerid": "1076037643376782"
+        }
+      ]
+    }
+  }
+}
