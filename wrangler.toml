@@ -1,8 +1,0 @@
-name = "fixxxx"
-main = "src/index.ts"
-compatibility_date = "2023-12-01"
-compatibility_flags = ["nodejs_compat"]
-
-[observability]
-enabled = true
-head_sampling_rate = 1
