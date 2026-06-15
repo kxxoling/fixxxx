@@ -1,5 +1,5 @@
 import type { WeiboStatusInfo } from "./status";
-import type { WeiboUserInfo } from "./user";
+import type { WeiboAlbumInfo, WeiboUserInfo } from "./user";
 
 /**
  * Fetch an image and return as base64 data URL.
@@ -301,6 +301,56 @@ export async function renderUserPage(user: WeiboUserInfo): Promise<string> {
 
   <div class="footer">
     <a href="${userUrl}">在微博查看完整主页</a>
+  </div>
+</body>
+</html>`;
+}
+
+export async function renderAlbumPage(album: WeiboAlbumInfo): Promise<string> {
+  const cache = new Map<string, string>();
+  const userUrl = `https://weibo.com/u/${album.user.uid}`;
+
+  const picHtmlParts: string[] = [];
+  for (const item of album.items) {
+    const dataUrl = await imageToBase64(item.picSmall, cache);
+    const linkUrl = item.bid ? `https://weibo.com/detail/${item.bid}` : "#";
+    picHtmlParts.push(
+      `<a href="${linkUrl}" style="display:block;"><img src="${dataUrl}" style="width:100%;display:block;border-radius:4px;" loading="lazy"></a>`,
+    );
+  }
+  const picsHtml =
+    picHtmlParts.length > 0
+      ? picHtmlParts.join("")
+      : '<div style="text-align: center; color: #999; padding: 40px;">暂无图片</div>';
+
+  return `<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>${escapeHtml(album.user.name)}的相册</title>
+  <meta property="og:title" content="${escapeHtml(album.user.name)}的相册">
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body { font-family: system-ui, -apple-system, sans-serif; max-width: 800px; margin: 0 auto; background: #f4f4f4; }
+    .header { display: flex; align-items: center; gap: 12px; padding: 20px; }
+    .header img { width: 48px; height: 48px; border-radius: 50%; object-fit: cover; }
+    .header h1 { font-size: 1.2rem; }
+    .grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 3px; padding: 0 3px; }
+    .footer { text-align: center; padding: 20px; }
+    .footer a { color: #ff8200; }
+  </style>
+</head>
+<body>
+  <div class="header">
+    <img src="${await imageToBase64(album.user.avatarHd || album.user.avatar, cache)}" alt="${escapeHtml(album.user.name)}">
+    <h1>${escapeHtml(album.user.name)}的相册</h1>
+  </div>
+  <div class="grid">
+    ${picsHtml}
+  </div>
+  <div class="footer">
+    <a href="${userUrl}">查看完整主页</a>
   </div>
 </body>
 </html>`;

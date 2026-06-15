@@ -1,7 +1,11 @@
 import { describe, expect, mock, test } from "bun:test";
 import type { WeiboStatusInfo } from "@/weibo/status";
-import type { WeiboUserInfo } from "@/weibo/user";
-import { renderStatusPage, renderUserPage } from "@/weibo/render";
+import type { WeiboAlbumInfo, WeiboUserInfo } from "@/weibo/user";
+import {
+  renderAlbumPage,
+  renderStatusPage,
+  renderUserPage,
+} from "@/weibo/render";
 
 function mockImageFetch() {
   const originalFetch = global.fetch;
@@ -174,5 +178,49 @@ describe("Weibo Render Logic", () => {
     expect(html).toContain("NewUser");
     expect(html).toContain("暂无微博");
     expect(html).toContain("linear-gradient");
+  });
+
+  test("renders album page with photo grid", async () => {
+    const cleanup = mockImageFetch();
+    const mockAlbum: WeiboAlbumInfo = {
+      user: {
+        uid: "7643376782",
+        name: "崩坏星穹铁道",
+        avatar: "https://tvax1.sinaimg.cn/avatar.jpg",
+        avatarHd: "https://wx1.sinaimg.cn/avatar_hd.jpg",
+      },
+      items: [
+        {
+          picSmall: "https://wx1.sinaimg.cn/thumb150/pic1.jpg",
+          picBig: "https://wx1.sinaimg.cn/large/pic1.jpg",
+          pid: "abc123",
+          bid: "R1CXrAEh5",
+        },
+        {
+          picSmall: "https://wx1.sinaimg.cn/thumb150/pic2.jpg",
+          picBig: "https://wx1.sinaimg.cn/large/pic2.jpg",
+          pid: "def456",
+          bid: null,
+        },
+      ],
+    };
+
+    const html = await renderAlbumPage(mockAlbum);
+
+    expect(html).toContain("崩坏星穹铁道的相册");
+    expect(html).toContain("data:image");
+    expect(html).toContain("weibo.com/u/7643376782");
+    cleanup();
+  });
+
+  test("renders album page with empty items", async () => {
+    const mockAlbum: WeiboAlbumInfo = {
+      user: { uid: "123", name: "Empty", avatar: "", avatarHd: "" },
+      items: [],
+    };
+
+    const html = await renderAlbumPage(mockAlbum);
+
+    expect(html).toContain("暂无图片");
   });
 });

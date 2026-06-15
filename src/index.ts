@@ -9,9 +9,13 @@ import {
 import { getTimelineInfo } from "./bilibili/timeline";
 import { getComments, getVideoInfo } from "./bilibili/video";
 import { WeiboApiError } from "./weibo/errors";
-import { renderStatusPage, renderUserPage } from "./weibo/render";
+import {
+  renderAlbumPage,
+  renderStatusPage,
+  renderUserPage,
+} from "./weibo/render";
 import { getStatusInfo } from "./weibo/status";
-import { getUserInfo } from "./weibo/user";
+import { getAlbumInfo, getUserInfo } from "./weibo/user";
 
 const app = new Hono();
 export { app };
@@ -109,6 +113,15 @@ app.get("/w/status/:id", async (c) => {
 
 app.get("/w/u/:uid", async (c) => {
   const uid = c.req.param("uid");
+  const tabtype = c.req.query("tabtype");
+
+  if (tabtype === "album") {
+    const album = await getAlbumInfo(uid);
+    if (!album) return c.notFound();
+    const html = await renderAlbumPage(album);
+    return c.html(html);
+  }
+
   const user = await getUserInfo(uid);
 
   if (!user) {

@@ -47,6 +47,85 @@ function parseRecentStatus(mblog: any): WeiboRecentStatus {
   };
 }
 
+export interface WeiboAlbumItem {
+  picSmall: string;
+  picBig: string;
+  pid: string;
+  bid: string | null;
+}
+
+export interface WeiboAlbumInfo {
+  user: {
+    uid: string;
+    name: string;
+    avatar: string;
+    avatarHd: string;
+  };
+  items: WeiboAlbumItem[];
+}
+
+export async function getAlbumInfo(
+  uid: string,
+): Promise<WeiboAlbumInfo | null> {
+  try {
+    // Fetch user profile for header info
+    const profileUrl = `https://m.weibo.cn/api/container/getIndex?type=uid&value=${uid}`;
+    const profileResp = await fetch(profileUrl, {
+      headers: await getHeaders(),
+    });
+
+    let user = { uid, name: "", avatar: "", avatarHd: "" };
+    if (profileResp.ok) {
+      const profileData = (await safeJson(profileResp)) as any;
+      if (profileData.ok === 1 && profileData.data?.userInfo) {
+        const u = profileData.data.userInfo;
+        user = {
+          uid: u.id?.toString() || uid,
+          name: u.screen_name || "",
+          avatar: u.profile_image_url || "",
+          avatarHd: u.avatar_hd || u.profile_image_url || "",
+        };
+      }
+    }
+
+    // Fetch album container (107803 + uid)
+    const albumUrl = `https://m.weibo.cn/api/container/getIndex?containerid=107803${uid}&page=1`;
+    const albumResp = await fetch(albumUrl, {
+      headers: await getHeaders(),
+    });
+
+    if (!albumResp.ok) return { user, items: [] };
+
+    const albumData = (await safeJson(albumResp)) as any;
+    if (albumData.ok !== 1) return { user, items: [] };
+
+    const items: WeiboAlbumItem[] = [];
+    const cards = albumData.data?.cards || [];
+    for (const card of cards) {
+      if (card.card_type === 11 && card.card_group) {
+        for (const g of card.card_group) {
+          if (g.card_type === 47 && g.pics) {
+            for (const pic of g.pics) {
+              items.push({
+                picSmall: pic.pic_middle || pic.pic_small || "",
+                picBig: pic.pic_big || pic.pic_mw2000 || pic.pic_middle || "",
+                pid: pic.pic_id || "",
+                bid: g.mblog?.bid || null,
+              });
+            }
+          }
+        }
+      }
+    }
+
+    return { user, items };
+  } catch (error) {
+    if (error instanceof WeiboApiError) throw error;
+    console.error("Fetch Error (Weibo Album):", error);
+    throw error;
+  }
+}
+
 export async function getUserInfo(uid: string): Promise<WeiboUserInfo | null> {
   try {
     // Step 1: Get user profile
