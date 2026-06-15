@@ -1,0 +1,47 @@
+{
+  "ok": 1,
+  "data": {
+    "created_at": "Fri May 29 12:00:01 +0800 2026",
+    "id": "5303880858734627",
+    "mid": "5303880858734627",
+    "text": "《崩坏：星穹铁道》千冶•刃角色PV——「灭度」<br /><br />一名匠人，一位逝者，一柄新刃。",
+    "source": "崩坏星穹铁道超话",
+    "pic_ids": [],
+    "user": {
+      "id": 7643376782,
+      "screen_name": "崩坏星穹铁道",
+      "profile_image_url": "https://tvax1.sinaimg.cn/crop.0.0.1080.1080.180/008lgPsGly8idpmc8mlsyj30u00u0q5z.jpg",
+      "profile_url": "https://m.weibo.cn/u/7643376782",
+      "follow_count": 37,
+      "followers_count": "453.3万",
+      "avatar_hd": "https://wx1.sinaimg.cn/orj480/008lgPsGly8idpmc8mlsyj30u00u0q5z.jpg",
+      "statuses_count": 3473,
+      "verified": true,
+      "verified_type": 7,
+      "gender": "f",
+      "verified_reason": "《崩坏：星穹铁道》官方账号"
+    },
+    "reposts_count": 4357,
+    "comments_count": 1181,
+    "attitudes_count": 8991,
+    "isLongText": true,
+    "bid": "R1CXrAEh5",
+    "page_info": {
+      "type": "video",
+      "page_pic": {
+        "url": "https://wx1.sinaimg.cn/orj480/008lgPsGgy1idm54s8o53j31hc0u0kjl.jpg"
+      },
+      "title": "《崩坏：星穹铁道》千冶•刃角色PV——「灭度」",
+      "play_count": "28万次播放",
+      "media_info": {
+        "stream_url": "https://f.video.weibocdn.com/o0/mS8IPED6lx08y0ESV0Nq010412017ygn0E010.mp4?label=mp4_hd&template=1128x480.25.0",
+        "stream_url_hd": "https://f.video.weibocdn.com/o0/mS8IPED6lx08y0ESV0Nq010412017ygn0E010.mp4?label=mp4_hd&template=1128x480.25.0",
+        "duration": 104.026
+      },
+      "urls": {
+        "mp4_720p_mp4": "https://f.video.weibocdn.com/o0/TAnnvfa1lx08y0EUKrja010412022sl70E010.mp4?label=mp4_720p&template=1692x720.25.0",
+        "mp4_hd_mp4": "https://f.video.weibocdn.com/o0/mS8IPED6lx08y0ESV0Nq010412017ygn0E010.mp4?label=mp4_hd&template=1128x480.25.0"
+      }
+    }
+  }
+}
