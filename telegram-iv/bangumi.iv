@@ -1,0 +1,19 @@
+# Bangumi subject page
+# Register at: https://instantview.telegram.org/my/
+
+~version: "2.0"
+
+# Match bangumi subject routes on your domain
+?path: /bgm/subject/*
+
+# The article content
+article: $body(article)
+
+# Title from h1
+title: $body(article h1)
+
+# Cover image
+cover: $body(article .cover)/@src
+
+# Body content (everything inside article)
+body: $body(article)

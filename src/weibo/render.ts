@@ -108,16 +108,16 @@ export async function renderStatusPage(
 
   <!-- Open Graph / Telegram -->
   <meta property="og:site_name" content="Weibo Instant View">
-  <meta property="og:title" content="${escapeHtml(status.videoTitle || plainText.substring(0, 80) || "微博动态")}">
-  <meta property="og:description" content="${escapeHtml(plainText.substring(0, 200))}">
+  <meta property="og:title" content="${escapeMeta(status.videoTitle || plainText.substring(0, 80) || "微博动态")}">
+  <meta property="og:description" content="${escapeMeta(plainText.substring(0, 200))}">
   <meta property="og:url" content="${statusUrl}">
   <meta property="og:type" content="${status.videoUrl ? "video.other" : "article"}">
   ${status.videoUrl ? `<meta property="og:video" content="${status.videoUrl}">` : ""}
 
   <!-- Twitter Card -->
   <meta name="twitter:card" content="${status.videoUrl ? "player" : "summary_large_image"}">
-  <meta name="twitter:title" content="${escapeHtml(status.videoTitle || plainText.substring(0, 80) || "微博动态")}">
-  <meta name="twitter:description" content="${escapeHtml(plainText.substring(0, 200))}">
+  <meta name="twitter:title" content="${escapeMeta(status.videoTitle || plainText.substring(0, 80) || "微博动态")}">
+  <meta name="twitter:description" content="${escapeMeta(plainText.substring(0, 200))}">
 
   <style>
     body { font-family: system-ui, -apple-system, sans-serif; max-width: 800px; margin: 0 auto; padding: 20px; background: #f4f4f4; }
@@ -231,16 +231,16 @@ export async function renderUserPage(user: WeiboUserInfo): Promise<string> {
 
   <!-- Open Graph / Telegram -->
   <meta property="og:site_name" content="Weibo Instant View">
-  <meta property="og:title" content="${escapeHtml(user.name)}">
-  <meta property="og:description" content="${escapeHtml(user.verifiedReason || user.description || user.name)}">
+  <meta property="og:title" content="${escapeMeta(user.name)}">
+  <meta property="og:description" content="${escapeMeta(user.verifiedReason || user.description || user.name)}">
   <meta property="og:image" content="${user.avatarHd || user.avatar}">
   <meta property="og:url" content="${userUrl}">
   <meta property="og:type" content="profile">
 
   <!-- Twitter Card -->
   <meta name="twitter:card" content="summary_large_image">
-  <meta name="twitter:title" content="${escapeHtml(user.name)}">
-  <meta name="twitter:description" content="${escapeHtml(user.verifiedReason || user.description || user.name)}">
+  <meta name="twitter:title" content="${escapeMeta(user.name)}">
+  <meta name="twitter:description" content="${escapeMeta(user.verifiedReason || user.description || user.name)}">
   <meta name="twitter:image" content="${user.avatarHd || user.avatar}">
 
   <style>
@@ -329,7 +329,7 @@ export async function renderAlbumPage(album: WeiboAlbumInfo): Promise<string> {
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>${escapeHtml(album.user.name)}的相册</title>
-  <meta property="og:title" content="${escapeHtml(album.user.name)}的相册">
+  <meta property="og:title" content="${escapeMeta(album.user.name)}的相册">
   <style>
     * { margin: 0; padding: 0; box-sizing: border-box; }
     body { font-family: system-ui, -apple-system, sans-serif; max-width: 800px; margin: 0 auto; background: #f4f4f4; }
@@ -375,6 +375,12 @@ function escapeHtml(text: string): string {
     .replace(/>/g, "&gt;")
     .replace(/"/g, "&quot;")
     .replace(/'/g, "&#39;");
+}
+
+function escapeMeta(text: string): string {
+  return escapeHtml(text)
+    .replace(/[\r\n]+/g, " ")
+    .trim();
 }
 
 function truncateHtml(html: string, maxLen: number): string {

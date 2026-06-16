@@ -197,8 +197,11 @@ function renderPage(data: PageData, comments: Comment[]) {
   
   <!-- Open Graph / Telegram -->
   <meta property="og:site_name" content="Bilibili Instant View">
-  <meta property="og:title" content="${title}">
-  <meta property="og:description" content="${desc.substring(0, 200)}...">
+  <meta property="og:title" content="${title.replace(/[\r\n]+/g, " ").trim()}">
+  <meta property="og:description" content="${desc
+    .substring(0, 200)
+    .replace(/[\r\n]+/g, " ")
+    .trim()}...">
   <meta property="og:image" content="${pic}">
   <meta property="og:url" content="${url}">
   <meta property="og:type" content="${type}">
