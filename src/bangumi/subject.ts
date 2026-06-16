@@ -24,7 +24,7 @@ export interface BangumiSubjectInfo {
     dropped: number;
   };
   tags: { name: string; count: number }[];
-  infobox: { key: string; value: string | { k: string; v: string }[] }[];
+  infobox: { key: string; value: string | { k?: string; v: string }[] }[];
   url: string;
 }
 

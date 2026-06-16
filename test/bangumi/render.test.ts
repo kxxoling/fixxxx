@@ -87,4 +87,45 @@ describe("Bangumi Render Logic", () => {
     expect(html).not.toContain("评分");
     expect(html).not.toContain("标签");
   });
+
+  test("renders infobox with array values missing k field", () => {
+    const mockSubject: BangumiSubjectInfo = {
+      id: 221062,
+      name: "PERSONA5 the Animation",
+      nameCn: "女神异闻录5",
+      summary: "test",
+      cover: "https://lain.bgm.tv/pic/cover/l/e9/da/221062_UxRu1.jpg",
+      date: "2018-04-07",
+      platform: "TV",
+      type: 2,
+      totalEpisodes: 26,
+      rating: {
+        rank: 7638,
+        score: 6,
+        total: 3230,
+        count: { "6": 1186, "7": 808 },
+      },
+      collection: {
+        wish: 894,
+        collect: 4784,
+        doing: 729,
+        onHold: 562,
+        dropped: 677,
+      },
+      tags: [{ name: "游戏改", count: 982 }],
+      infobox: [
+        { key: "中文名", value: "女神异闻录5" },
+        { key: "别名", value: [{ v: "P5A" }] },
+        { key: "话数", value: "26" },
+      ],
+      url: "https://bgm.tv/subject/221062",
+    };
+
+    const html = renderSubjectPage(mockSubject);
+
+    expect(html).toContain("女神异闻录5");
+    expect(html).toContain("P5A");
+    expect(html).not.toContain("undefined");
+    expect(html).toContain("6.0");
+  });
 });

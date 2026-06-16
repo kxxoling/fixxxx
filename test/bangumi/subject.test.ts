@@ -52,4 +52,63 @@ describe("Bangumi Subject Logic", () => {
       global.fetch = originalFetch;
     }
   });
+
+  test("parses subject with array infobox values without k field (221062)", async () => {
+    const fixturePath = join(
+      process.cwd(),
+      "test/bangumi/fixtures/subject-221062.json",
+    );
+    const fixtureData = JSON.parse(readFileSync(fixturePath, "utf-8"));
+
+    const originalFetch = global.fetch;
+    global.fetch = mock((url: string) => {
+      if (url.includes("api.bgm.tv/v0/subjects/221062")) {
+        return Promise.resolve(new Response(JSON.stringify(fixtureData)));
+      }
+      return Promise.reject(new Error(`Unhandled fetch URL: ${url}`));
+    }) as unknown as typeof global.fetch;
+
+    try {
+      const subject = await getSubjectInfo("221062");
+      expect(subject).toBeDefined();
+      if (subject) {
+        expect(subject.name).toBe("PERSONA5 the Animation");
+        expect(subject.infobox.length).toBeGreaterThan(0);
+        // "别名" field has array value with {v} only, no {k}
+        const aliasItem = subject.infobox.find((i) => i.key === "别名");
+        expect(aliasItem).toBeDefined();
+        expect(Array.isArray(aliasItem!.value)).toBe(true);
+      }
+    } finally {
+      global.fetch = originalFetch;
+    }
+  });
+
+  test("parses subject with large infobox (443831)", async () => {
+    const fixturePath = join(
+      process.cwd(),
+      "test/bangumi/fixtures/subject-443831.json",
+    );
+    const fixtureData = JSON.parse(readFileSync(fixturePath, "utf-8"));
+
+    const originalFetch = global.fetch;
+    global.fetch = mock((url: string) => {
+      if (url.includes("api.bgm.tv/v0/subjects/443831")) {
+        return Promise.resolve(new Response(JSON.stringify(fixtureData)));
+      }
+      return Promise.reject(new Error(`Unhandled fetch URL: ${url}`));
+    }) as unknown as typeof global.fetch;
+
+    try {
+      const subject = await getSubjectInfo("443831");
+      expect(subject).toBeDefined();
+      if (subject) {
+        expect(subject.name).toBe("Fate/strange Fake");
+        expect(subject.infobox.length).toBeGreaterThan(20);
+        expect(subject.rating.score).toBeGreaterThan(0);
+      }
+    } finally {
+      global.fetch = originalFetch;
+    }
+  });
 });

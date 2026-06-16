@@ -42,14 +42,16 @@ function renderInfobox(infobox: BangumiSubjectInfo["infobox"]): string {
   const rows: string[] = [];
   for (const item of infobox) {
     if (Array.isArray(item.value)) {
-      const links = item.value
-        .map(
-          (v) =>
-            `<a href="${escapeHtml(v.v)}" style="color:#ff8200;">${escapeHtml(v.k)}</a>`,
-        )
+      const parts = item.value
+        .map((v) => {
+          if (v.k) {
+            return `<a href="${escapeHtml(v.v)}" style="color:#ff8200;">${escapeHtml(v.k)}</a>`;
+          }
+          return escapeHtml(v.v);
+        })
         .join(" / ");
       rows.push(
-        `<tr><td style="padding:4px 12px;color:#999;white-space:nowrap;vertical-align:top;">${escapeHtml(item.key)}</td><td style="padding:4px 0;">${links}</td></tr>`,
+        `<tr><td style="padding:4px 12px;color:#999;white-space:nowrap;vertical-align:top;">${escapeHtml(item.key)}</td><td style="padding:4px 0;">${parts}</td></tr>`,
       );
     } else {
       rows.push(
