@@ -10,6 +10,12 @@ function escapeHtml(text: string): string {
     .replace(/'/g, "&#39;");
 }
 
+function escapeMeta(text: string): string {
+  return escapeHtml(text)
+    .replace(/[\r\n]+/g, " ")
+    .trim();
+}
+
 function formatNumber(n: number): string {
   if (n >= 10000) return `${(n / 10000).toFixed(1)}万`;
   return n.toString();
@@ -90,10 +96,16 @@ export function renderSubjectPage(subject: BangumiSubjectInfo): string {
   <title>${escapeHtml(title)} - Bangumi</title>
 
   <meta property="og:site_name" content="Bangumi Instant View">
-  <meta property="og:title" content="${escapeHtml(title)}">
-  <meta property="og:description" content="${escapeHtml(subject.summary.substring(0, 200))}">
+  <meta property="og:type" content="article">
+  <meta property="og:title" content="${escapeMeta(title)}">
+  <meta property="og:description" content="${escapeMeta(subject.summary.substring(0, 200))}">
   <meta property="og:image" content="${subject.cover}">
   <meta property="og:url" content="${subject.url}">
+
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="${escapeMeta(title)}">
+  <meta name="twitter:description" content="${escapeMeta(subject.summary.substring(0, 200))}">
+  <meta name="twitter:image" content="${subject.cover}">
 
   <style>
     * { margin: 0; padding: 0; box-sizing: border-box; }
@@ -121,8 +133,9 @@ export function renderSubjectPage(subject: BangumiSubjectInfo): string {
   </style>
 </head>
 <body>
+ <article>
   <div class="card">
-    <div class="header">
+   <header class="header">
       ${subject.cover ? `<img class="cover" src="${subject.cover}" alt="${escapeHtml(title)}">` : ""}
       <div class="info">
         <h1>${escapeHtml(title)}</h1>
@@ -135,7 +148,7 @@ export function renderSubjectPage(subject: BangumiSubjectInfo): string {
         </div>
         ${subject.rating.total > 0 ? `<div style="margin-top:8px;"><span style="font-size:1.5rem;font-weight:bold;color:#ff8200;">${subject.rating.score.toFixed(1)}</span> <span style="font-size:0.8rem;color:#999;">${formatNumber(subject.rating.total)}人评分${subject.rating.rank > 0 ? ` &middot; 排名 #${subject.rating.rank}` : ""}</span></div>` : ""}
       </div>
-    </div>
+   </header>
 
     ${
       infoboxHtml
@@ -182,6 +195,7 @@ export function renderSubjectPage(subject: BangumiSubjectInfo): string {
   <div class="footer">
     <a href="${subject.url}">在 Bangumi 查看完整页面</a>
   </div>
+ </article>
 </body>
 </html>`;
 }
