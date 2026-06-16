@@ -1,4 +1,7 @@
 import { Hono } from "hono";
+import { BangumiApiError } from "./bangumi/errors";
+import { renderSubjectPage } from "./bangumi/render";
+import { getSubjectInfo } from "./bangumi/subject";
 import { BilibiliApiError } from "./bilibili/errors";
 import { getOpusInfo } from "./bilibili/opus";
 import {
@@ -22,7 +25,7 @@ export { app };
 
 app.get("/", (c) => {
   return c.text(
-    "Instant View Service.\nBilibili: /b/video/:bvid, /b/t/:id, /b/opus/:id\nWeibo: /w/status/:id, /w/u/:uid",
+    "Instant View Service.\nBilibili: /b/video/:bvid, /b/t/:id, /b/opus/:id\nWeibo: /w/status/:id, /w/u/:uid\nBangumi: /bgm/subject/:id",
   );
 });
 
@@ -132,6 +135,18 @@ app.get("/w/u/:uid", async (c) => {
   return c.html(html);
 });
 
+app.get("/bgm/subject/:id", async (c) => {
+  const id = c.req.param("id");
+  const subject = await getSubjectInfo(id);
+
+  if (!subject) {
+    return c.notFound();
+  }
+
+  const html = renderSubjectPage(subject);
+  return c.html(html);
+});
+
 app.notFound((c) => {
   return c.html(
     `
@@ -183,6 +198,28 @@ app.onError((err, c) => {
         <body style="font-family: sans-serif; text-align: center; padding: 50px;">
           <h1>Weibo API Error</h1>
           <p>The upstream Weibo API returned an error.</p>
+          <div style="background: #f8dede; color: #9c1c1c; padding: 15px; border-radius: 5px; display: inline-block; text-align: left; margin: 20px 0;">
+            <p><strong>Code:</strong> ${err.code}</p>
+            <p><strong>Message:</strong> ${err.message}</p>
+          </div>
+          <br/>
+          <a href="/">Go Home</a>
+        </body>
+        </html>
+      `,
+      502,
+    );
+  }
+
+  if (err instanceof BangumiApiError) {
+    return c.html(
+      `
+        <!DOCTYPE html>
+        <html>
+        <head><title>Bangumi API Error</title></head>
+        <body style="font-family: sans-serif; text-align: center; padding: 50px;">
+          <h1>Bangumi API Error</h1>
+          <p>The upstream Bangumi API returned an error.</p>
           <div style="background: #f8dede; color: #9c1c1c; padding: 15px; border-radius: 5px; display: inline-block; text-align: left; margin: 20px 0;">
             <p><strong>Code:</strong> ${err.code}</p>
             <p><strong>Message:</strong> ${err.message}</p>
