@@ -1,0 +1,196 @@
+{
+  "date": "2026-01-03",
+  "platform": "TV",
+  "images": {
+    "small": "https://lain.bgm.tv/r/200/pic/cover/l/f0/51/443831_84ZQs.jpg",
+    "grid": "https://lain.bgm.tv/r/100/pic/cover/l/f0/51/443831_84ZQs.jpg",
+    "large": "https://lain.bgm.tv/pic/cover/l/f0/51/443831_84ZQs.jpg",
+    "medium": "https://lain.bgm.tv/r/800/pic/cover/l/f0/51/443831_84ZQs.jpg",
+    "common": "https://lain.bgm.tv/r/400/pic/cover/l/f0/51/443831_84ZQs.jpg"
+  },
+  "summary": "魔术师〈Master〉与英灵〈Servant〉为了争夺能实现一切愿望的愿望机「圣杯」，而彼此厮杀——这便是「圣杯战争」。\r\n\r\n在日本进行的第五次圣杯战争落下帷幕的几年之后。\r\n在美利坚合众国西部的城市——雪原市（Snowfield），观测到了新圣杯即将出现的征兆。\r\n于是魔术师〈Master〉与英灵〈Servant〉们纷纷集结于此地——\r\n\r\n缺失的职阶。\r\n本不该被选中的从者。\r\n在暗处操盘的国家势力。\r\n为战争而建造的城市。\r\n——由于无数的异常状况（Irregular），「圣杯战争」逐渐走向失控，局势愈发混沌扭曲。\r\n\r\n在伪圣杯的祭坛之上共舞，人类与英灵〈Servant〉的饗宴就此拉开帷幕。",
+  "name": "Fate/strange Fake",
+  "name_cn": "Fate/strange Fake",
+  "tags": [
+    { "name": "Fate", "count": 2118, "total_cont": 0 },
+    { "name": "A-1Pictures", "count": 1961, "total_cont": 0 },
+    { "name": "战斗", "count": 1718, "total_cont": 0 },
+    { "name": "奇幻", "count": 1644, "total_cont": 0 },
+    { "name": "TV", "count": 1579, "total_cont": 0 },
+    { "name": "Type-Moon", "count": 1478, "total_cont": 0 },
+    { "name": "2026年1月", "count": 1211, "total_cont": 0 },
+    { "name": "轻小说改", "count": 1130, "total_cont": 0 },
+    { "name": "小说改", "count": 991, "total_cont": 0 },
+    { "name": "日本", "count": 820, "total_cont": 0 },
+    { "name": "成田良悟", "count": 744, "total_cont": 0 },
+    { "name": "2026", "count": 522, "total_cont": 0 },
+    { "name": "轻改", "count": 351, "total_cont": 0 },
+    { "name": "2025", "count": 163, "total_cont": 0 },
+    { "name": "2025年1月", "count": 118, "total_cont": 0 },
+    { "name": "榎户骏", "count": 87, "total_cont": 0 },
+    { "name": "坂诘嵩仁", "count": 50, "total_cont": 0 },
+    { "name": "群像", "count": 48, "total_cont": 0 },
+    { "name": "热血", "count": 47, "total_cont": 0 },
+    { "name": "坂詰嵩仁", "count": 36, "total_cont": 0 },
+    { "name": "榎戸駿", "count": 33, "total_cont": 0 },
+    { "name": "2024", "count": 22, "total_cont": 0 },
+    { "name": "泽野弘之", "count": 19, "total_cont": 0 },
+    { "name": "未定档", "count": 16, "total_cont": 0 },
+    { "name": "音乐", "count": 15, "total_cont": 0 },
+    { "name": "2026年", "count": 14, "total_cont": 0 },
+    { "name": "型月", "count": 11, "total_cont": 0 },
+    { "name": "日本动画", "count": 10, "total_cont": 0 },
+    { "name": "大東大介", "count": 9, "total_cont": 0 },
+    { "name": "续作", "count": 8, "total_cont": 0 }
+  ],
+  "infobox": [
+    { "key": "中文名", "value": "Fate/strange Fake" },
+    { "key": "别名", "value": [{ "v": "命运-奇异赝品" }, { "v": "FSF" }] },
+    { "key": "话数", "value": "13" },
+    { "key": "放送开始", "value": "2026年1月3日" },
+    { "key": "放送星期", "value": "星期六" },
+    { "key": "官方网站", "value": "https://fate-strange-fake.com/" },
+    { "key": "播放电视台", "value": "TOKYO MX / BS11" },
+    { "key": "导演", "value": "榎戸駿・坂詰嵩仁" },
+    { "key": "音乐", "value": "澤野弘之" },
+    { "key": "Copyright", "value": "©成田良悟・TYPE-MOON/KADOKAWA/FSFPC" },
+    {
+      "key": "原作",
+      "value": "成田良悟・TYPE-MOON『Fate/strange Fake』（電撃文庫刊）"
+    },
+    { "key": "人物原案", "value": "森井しづき；协力：坂本みねぢ(3)" },
+    { "key": "系列构成", "value": "大東大介" },
+    { "key": "人物设定", "value": "山田有慶" },
+    {
+      "key": "副人物设定",
+      "value": "滝山真哲、相音光、浜友里恵、おかざきおか"
+    },
+    { "key": "道具设计", "value": "田中一真" },
+    { "key": "怪物设计", "value": "和田慎平、楫野裕翔" },
+    { "key": "印象板", "value": "有原慧悟" },
+    { "key": "设定", "value": "宝具演出设定：伍柏諭" },
+    { "key": "主动画师", "value": "遠山友賀" },
+    {
+      "key": "美术监督",
+      "value": "清木亜夕(草薙)、畠山佑貴(草薙)、岡本綾乃(草薙)、権瓶岳斗(グーフィー)"
+    },
+    {
+      "key": "美术板",
+      "value": "小倉一男(草薙)、岡本綾乃(草薙)、吉原俊一郎(美峰)、辻秀一(美峰)"
+    },
+    {
+      "key": "美术设计",
+      "value": "成田偉保(草薙)、板橋紗綾香(グラフィニク)、杉本あゆみ・新妻雅行(千住工房)、平義樹弥(A-1 Pictures)"
+    },
+    { "key": "色彩设计", "value": "茂木孝浩" },
+    { "key": "CG 导演", "value": "宮風慎一(グラフィニカ)" },
+    { "key": "2D 设计", "value": "松田陵平" },
+    { "key": "摄影监督", "value": "宮脇洋平" },
+    { "key": "剪辑", "value": "近藤勇二(REAL-T)" },
+    { "key": "音响监督", "value": "土屋雅紀" },
+    { "key": "音效", "value": "小山恭正" },
+    { "key": "音响", "value": "INSPIONエッジ" },
+    { "key": "动画制作", "value": "A-1 Pictures" },
+    {
+      "key": "监修",
+      "value": "奈須きのこ、三田誠、虚淵玄、東出祐一郎、桜井光"
+    },
+    {
+      "key": "设定协力",
+      "value": "奈須きのこ、三田誠、虚淵玄、東出祐一郎、桜井光"
+    },
+    {
+      "key": "制片人",
+      "value": "黒崎静佳→片岡裕貴、長嶺利江子→買場道雄、大和田智之、新倉俊哉"
+    },
+    { "key": "制作统括", "value": "清水暁、佐藤成俊" },
+    { "key": "动画制片人", "value": "藤田祥雄" },
+    { "key": "副制片人", "value": "尾堂太朗、照井健、橋本京佳、東真央" },
+    { "key": "宣传制片人", "value": "山下花子" },
+    {
+      "key": "企画",
+      "value": "岩上敦宏、竹内友崇(武内崇)、佐藤真紀、羽川寛、大塚則和"
+    },
+    { "key": "企画协力", "value": "阿南浩志、渡部竜平、関根龍二、太田真由" },
+    {
+      "key": "协力",
+      "value": "黒﨑静佳、小野木航、中山智之、岡田武士、松﨑由美子、谷池侑美、佐藤茂薫、月岡佑紀、佐藤顕、石橋杏果"
+    },
+    {
+      "key": "製作",
+      "value": "Aniplex、ノーツ、TOKYO MX、BS11(日本BS放送)、コンテンツシード"
+    },
+    { "key": "主题歌作曲", "value": "澤野弘之" },
+    { "key": "主题歌编曲", "value": "澤野弘之" },
+    {
+      "key": "主题歌演出",
+      "value": "SawanoHiroyuki[nZk]:Jean-Ken Johnny & TAKUMA / 13.3g"
+    },
+    {
+      "key": "脚本",
+      "value": "大東大介(1-4,8,12-13)、佐藤亜美(5,9)、枦山大(6,11)、窪山阿佐子(7,10)"
+    },
+    {
+      "key": "分镜",
+      "value": "榎戸駿(1,4,9,13)、坂詰嵩仁(2-3,13)、大川貴大(5)、宮川駿(6)、小原正和(7)、仲野良(8)、黒沢守(9)、北村翔太郎(10)、益山亮司(11)、朝岡卓矢(12)"
+    },
+    {
+      "key": "演出",
+      "value": "榎戸駿(1,13)、坂詰嵩仁(2,13)、國本一穂(3)、川岸和樹(4)、大川貴大(5)、迫井政行(5)、森大貴(6,13)、宮川駿(6)、小原正和(7)、仲野良(8,12)、粂田佳之(9,12)、北村翔太郎(10)、益山亮司(11)"
+    },
+    {
+      "key": "OP・ED 分镜",
+      "value": "榎戸駿・坂詰嵩仁(OP) / tkg[髙木麻穂](ED1)、山本健(ED2)"
+    },
+    {
+      "key": "OP・ED 演出",
+      "value": "岩澤亨(OP) / tkg[髙木麻穂](ED1)、山本健(ED2)"
+    },
+    { "key": "插画", "value": "吉成鋼(肖像画#5)" },
+    { "key": "插入歌演出", "value": "SawanoHiroyuki[nZk]:Yosh" }
+  ],
+  "rating": {
+    "rank": 1307,
+    "total": 9150,
+    "count": {
+      "1": 17,
+      "2": 8,
+      "3": 24,
+      "4": 68,
+      "5": 199,
+      "6": 934,
+      "7": 3852,
+      "8": 3430,
+      "9": 437,
+      "10": 181
+    },
+    "score": 7.3
+  },
+  "total_episodes": 13,
+  "collection": {
+    "on_hold": 351,
+    "dropped": 174,
+    "wish": 3797,
+    "collect": 12733,
+    "doing": 6592
+  },
+  "id": 443831,
+  "eps": 13,
+  "meta_tags": [
+    "TV",
+    "TV",
+    "日本",
+    "日本",
+    "奇幻",
+    "奇幻",
+    "战斗",
+    "战斗",
+    "小说改",
+    "小说改"
+  ],
+  "volumes": 0,
+  "series": false,
+  "locked": false,
+  "nsfw": false,
+  "type": 2
+}
