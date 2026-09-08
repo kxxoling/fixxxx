@@ -1,0 +1,21 @@
+{
+  "id": 123456789,
+  "title": "示例：如何优雅地写一篇知乎专栏",
+  "content": "<h2>为什么写专栏</h2><p>写作是最好的思考方式。<b>输出倒逼输入</b>。</p><blockquote>纸上得来终觉浅，绝知此事要躬行。</blockquote><pre><code>console.log('hello zhihu');</code></pre><p>配图演示：</p><figure><img src=\"https://pic1.zhimg.com/80/v2-211dd15e1000c599f5b89ecf4e1eb3b6_1440w.png\" data-rawwidth=\"1440\"></figure><iframe src=\"https://www.youtube.com/embed/xyz\"></iframe><p>完。</p>",
+  "excerpt": "写作是最好的思考方式。输出倒逼输入。",
+  "image_url": "https://pic1.zhimg.com/80/v2-c19ceba4b1bea7204cb67e27f469c95b_1440w.png",
+  "created": "2024-05-01T10:00:00+08:00",
+  "updated": "2024-05-02T12:30:00+08:00",
+  "voteup_count": 666,
+  "comment_count": 45,
+  "author": {
+    "name": "专栏作者",
+    "headline": "写字的人",
+    "url_token": "column-author",
+    "avatar_url": "https://pic1.zhimg.com/v2-132ab52908934f6c3cd9166e51b99f47.png"
+  },
+  "column": {
+    "id": 10086,
+    "title": "写作方法论"
+  }
+}
