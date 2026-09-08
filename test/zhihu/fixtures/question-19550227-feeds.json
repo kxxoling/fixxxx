@@ -1,0 +1,59 @@
+{
+  "data": [
+    {
+      "type": "answer",
+      "created_time": 1687000000,
+      "updated_time": 1687100000,
+      "target": {
+        "id": 2744801099,
+        "type": "answer",
+        "url": "https://api.zhihu.com/answers/2744801099",
+        "author": {
+          "name": "示例作者",
+          "headline": "软件工程师",
+          "url_token": "example-author",
+          "avatar_url": "https://pic1.zhimg.com/v2-83c60e12dfb1a5571eb9f4f66640d859.png",
+          "follower_count": 1200
+        },
+        "voteup_count": 1024,
+        "comment_count": 88,
+        "content": "<p>Google 曾经关闭的产品包括：</p><ul><li>Google Reader（2013）</li><li>Google+（2019）</li></ul><p>完整列表见下图：</p><figure><img src=\"data:image/svg+xml;utf8,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%3E%3C/svg%3E\" data-actualsrc=\"https://pic1.zhimg.com/80/v2-05fe05b84411fc88790189e95d7e84aa_1440w.png\" data-rawwidth=\"720\"><figcaption>Google 墓碑（部分）</figcaption></figure><script>alert('x')</script><a href=\"https://www.zhihu.com/topic/Google\">Google 话题</a>",
+        "excerpt": "Google 曾经关闭的产品包括：Google Reader（2013）、Google+（2019）……",
+        "created_time": 1687000000,
+        "updated_time": 1687100000,
+        "question": { "id": 19550227 }
+      }
+    },
+    {
+      "type": "answer",
+      "target": {
+        "id": 12345678,
+        "type": "answer",
+        "author": {
+          "name": "匿名用户",
+          "headline": "",
+          "avatar_url": "",
+          "url_token": ""
+        },
+        "voteup_count": 42,
+        "comment_count": 3,
+        "content": "<p>还有 iGoogle、Google Wave、Google Buzz 等。</p>",
+        "excerpt": "还有 iGoogle、Google Wave、Google Buzz 等。",
+        "created_time": 1600000000,
+        "updated_time": 1600000000
+      }
+    },
+    {
+      "type": "answer",
+      "target": {
+        "id": 999000,
+        "type": "removed"
+      }
+    }
+  ],
+  "paging": {
+    "is_end": false,
+    "next": "https://www.zhihu.com/api/v4/questions/19550227/feeds?limit=5&offset=5",
+    "previous": ""
+  }
+}

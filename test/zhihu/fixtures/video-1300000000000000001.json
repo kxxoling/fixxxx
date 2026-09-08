@@ -1,0 +1,28 @@
+{
+  "id": 1300000000000000001,
+  "status": "ok",
+  "title": "年初短片",
+  "duration": 183,
+  "thumbnail": "https://pic1.zhimg.com/80/v2-05fe05b84411fc88790189e95d7e84aa_1440w.png",
+  "cover_url": "https://pic1.zhimg.com/80/v2-05fe05b84411fc88790189e95d7e84aa_1440w.png",
+  "playlist": [
+    {
+      "format": "mp4",
+      "quality": "sd",
+      "width": 640,
+      "height": 360,
+      "duration": 183,
+      "size": 7340032,
+      "play_url": "https://vdn3.vzuu.com/winter-night/1300000000000000001/sd.mp4?auth_key=1760000000-0-0-0-example&f=mp4"
+    },
+    {
+      "format": "mp4",
+      "quality": "hd",
+      "width": 1280,
+      "height": 720,
+      "duration": 183,
+      "size": 29360128,
+      "play_url": "https://vdn3.vzuu.com/winter-night/1300000000000000001/hd.mp4?auth_key=1760000000-0-0-0-example&f=mp4"
+    }
+  ]
+}

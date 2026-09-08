@@ -1,0 +1,47 @@
+{
+  "data": [
+    {
+      "type": "answer",
+      "target": {
+        "id": 2744801099,
+        "type": "answer",
+        "author": {
+          "name": "示例作者",
+          "headline": "软件工程师",
+          "url_token": "example-author",
+          "avatar_url": "https://pic1.zhimg.com/v2-83c60e12dfb1a5571eb9f4f66640d859.png"
+        },
+        "voteup_count": 1024,
+        "comment_count": 88,
+        "content": "<p>重复出现的回答（第一页已含，应被去重）。</p>",
+        "excerpt": "重复出现的回答",
+        "created_time": 1687000000,
+        "updated_time": 1687100000
+      }
+    },
+    {
+      "type": "answer",
+      "target": {
+        "id": 55500001,
+        "type": "answer",
+        "author": {
+          "name": "第三位作者",
+          "headline": "产品经理",
+          "url_token": "third-author",
+          "avatar_url": "https://pic1.zhimg.com/v2-176249162145d8ec58435bfab44d2d6e.png"
+        },
+        "voteup_count": 256,
+        "comment_count": 12,
+        "content": "<p>Google Wave 也于 2010 年关闭，还有 Google Buzz（2011）和 iGoogle（2012）。</p>",
+        "excerpt": "Google Wave 也于 2010 年关闭……",
+        "created_time": 1590000000,
+        "updated_time": 1590000000
+      }
+    }
+  ],
+  "paging": {
+    "is_end": true,
+    "next": "",
+    "previous": "https://www.zhihu.com/api/v4/questions/19550227/feeds?limit=5&offset=0"
+  }
+}
